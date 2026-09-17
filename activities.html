@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Activities · Aurelia Grand Hotel</title>
+<meta name="description" content="Aurelia Grand Hotel — luxury rooms, fine dining, events and unforgettable stays.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-logo">Aurelia</div></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand">Aurelia</a>
+    <button id="menuToggle" class="menu-toggle">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html" class="">Home</a>
+      <a href="../pages/rooms.html" class="">Rooms</a>
+      <a href="../pages/food.html" class="">Dining</a>
+      <a href="../pages/activities.html" class="active">Activities</a>
+      <a href="../pages/events.html" class="">Events</a>
+      <a href="../pages/booking.html" class="">Booking</a>
+      <a href="../pages/complaints.html" class="">Complaints</a>
+    </div>
+    <div class="nav-actions">
+      <span id="weather" class="weather"></span>
+      <button id="themeBtn" class="icon-btn" title="Toggle theme">🌙</button>
+      <span id="authSlot" style="display:flex;gap:6px;align-items:center"></span>
+    </div>
+  </div>
+</nav>
+<main class="container" style="padding:60px 24px">
+
+<div class="section-head"><span class="kicker">Play</span><h2>Hotel Activities</h2><p>Move, relax, explore — your Aurelian playground.</p></div>
+<div class="services-grid">
+  <div class="service reveal"><div class="ico">🏊</div><h3>Swimming</h3><p>Olympic & infinity pools</p></div><div class="service reveal"><div class="ico">🏋️</div><h3>Gym</h3><p>24/7 personal training</p></div><div class="service reveal"><div class="ico">💆</div><h3>Spa</h3><p>Holistic, ayurvedic, thermal</p></div><div class="service reveal"><div class="ico">🏖️</div><h3>Beach</h3><p>Private cove & water sports</p></div><div class="service reveal"><div class="ico">🧒</div><h3>Kids Area</h3><p>Playground & supervised club</p></div><div class="service reveal"><div class="ico">🎶</div><h3>Live Music</h3><p>Nightly in The Lounge</p></div><div class="service reveal"><div class="ico">🚐</div><h3>Tours</h3><p>Guided city & nature trips</p></div><div class="service reveal"><div class="ico">🚴</div><h3>Cycling</h3><p>Coastal route rentals</p></div>
+</div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4 class="brand" style="font-size:1.6rem">Aurelia</h4>
+        <p style="margin-top:10px;max-width:320px;color:#9ca3af">Where timeless elegance meets modern comfort. A 5-star sanctuary by the sea.</p>
+        <div class="socials">
+          <a href="#">f</a><a href="#">t</a><a href="#">ig</a><a href="#">in</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="../pages/rooms.html">Rooms</a>
+        <a href="../pages/food.html">Dining</a>
+        <a href="../pages/activities.html">Activities</a>
+        <a href="../pages/events.html">Events</a>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <a href="../pages/login.html">Login</a>
+        <a href="../pages/register.html">Register</a>
+        <a href="../pages/booking.html">Book a room</a>
+        <a href="../pages/complaints.html">Submit complaint</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a>📍 24 Coral Bay, Aurelia</a>
+        <a>📞 +1 (555) 020-7788</a>
+        <a>✉ stay@aureliagrand.com</a>
+        <a href="../pages/admin-login.html" style="color:var(--gold)">Admin portal</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 Aurelia Grand Hotel · Crafted with care</div>
+  </div>
+</footer>
+
+<button id="backTop">↑</button>
+<button id="chatBtn">💬</button>
+<button id="musicBtn">🎵</button>
+
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">Concierge Chat</div>
+  <div class="chat-body" id="chatBody">
+    <div class="chat-msg bot">Welcome to Aurelia! How can we help?</div>
+  </div>
+  <form class="chat-input" id="chatForm">
+    <input name="msg" placeholder="Type a message..." autocomplete="off">
+    <button type="submit">➤</button>
+  </form>
+</div>
+
+<div class="lightbox" id="lightbox"><img alt=""></div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
